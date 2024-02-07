@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerTeam : MonoBehaviour
 {
+    [SerializeField] private Person _lead;
     [SerializeField] private GameObject _followerPrefab;
     [SerializeField] private Person[] _startingTeam;
     [SerializeField] private Transform _followerSpawnParent;
@@ -12,9 +13,21 @@ public class PlayerTeam : MonoBehaviour
 
     [SerializeField] private List<Person> _allPersons;
 
+    private List<Person> _followers;
+
+    public List<Person> Followers => _followers;
+
+    public Person Lead => _lead;
+
+    private void Awake()
+    {
+        _followers = new List<Person>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+
         for (int i = 0; i < _startingTeam.Length; i++)
         {
             Person p = _startingTeam[i];
@@ -45,5 +58,6 @@ public class PlayerTeam : MonoBehaviour
         GameObject newGo = Instantiate(_followerPrefab);
         newGo.transform.position = _followerSpawnParent.GetChild(Random.Range(0, _followerSpawnParent.childCount)).transform.position;
         newGo.GetComponent<CharacterPlanes>().Setup(p);
+        _followers.Add(p);
     }
 }

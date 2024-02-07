@@ -761,6 +761,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dc97463b34d67874398f6fea01dee8df, type: 2}
   - {fileID: 11400000, guid: 47c6243469d079f448c2ffd9883753dc, type: 2}
   _followerSpawnParent: {fileID: 3079069692031522927}
+  _lead: {fileID: 11400000, guid: 64b4c4f95533aa24fa7c26c34d5592a9, type: 2}
   _allPersons:
   - {fileID: 11400000, guid: 95bdbf7eccc31974c96926eb113e0d33, type: 2}
   - {fileID: 11400000, guid: c756ff4f1a2b3514eab7b18c03a2dbc9, type: 2}
