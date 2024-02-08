@@ -89,6 +89,9 @@ public class JamController : MonoBehaviour
     public void Suppress()
     {
         enabled = false;
+        Movement = Vector3.zero;
+        MovementAxis = Vector2.zero;
+        _rb.velocity = Vector3.zero;
     }
     public void Unsupress()
     {

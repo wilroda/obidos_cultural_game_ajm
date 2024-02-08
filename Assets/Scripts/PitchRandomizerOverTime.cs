@@ -6,6 +6,7 @@ using UnityEngine;
 public class PitchRandomizerOverTime : MonoBehaviour
 {
     public Vector2 _minMax = new Vector2(0.9f, 1.1f);
+    public float _pitchShiftDelay = 0.5f;
     AudioSource _source;
     float countdown;
     // Start is called before the first frame update
@@ -20,7 +21,7 @@ public class PitchRandomizerOverTime : MonoBehaviour
         if (countdown <= 0)
         {
             _source.pitch = Random.Range(_minMax.x, _minMax.y);
-            countdown = 0.5f;
+            countdown = _pitchShiftDelay;
         }
 
         countdown -= Time.deltaTime;
