@@ -29,19 +29,21 @@ public class JamController : MonoBehaviour
 
     private void Update()
     {
-        HandleMovementInput();
         HandleJumpInput();
+        GetMovementInput();
         RotatePlayerTowardsMovement();
     }
 
     private void FixedUpdate()
     {
+        HandleMovementInput();
         _rb.AddForce(transform.up * -_addedGravity * Time.fixedDeltaTime);
     }
 
-    private void HandleMovementInput()
+    private void GetMovementInput()
     {
         MovementAxis = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+
         if (Input.GetKey(KeyCode.LeftShift))
         {
             RunFactor = 2;
@@ -50,9 +52,12 @@ public class JamController : MonoBehaviour
         {
             RunFactor = 1;
         }
+    }
 
-        Movement = new Vector3(MovementAxis.x, 0f, MovementAxis.y).normalized * _movementSpeed * Time.deltaTime * RunFactor;
-        Vector3 newPosition = _playerTransform.position + _playerTransform.TransformDirection(Movement);
+    private void HandleMovementInput()
+    {
+        Movement = new Vector3(MovementAxis.x, 0f, MovementAxis.y).normalized;
+        Vector3 newPosition = _playerTransform.position + (_playerTransform.TransformDirection(Movement) * _movementSpeed * Time.fixedDeltaTime * RunFactor);
 
         _rb.MovePosition(newPosition);
     }

@@ -38,12 +38,12 @@ public class GinjaTrap : MonoBehaviour
         CoroutineHelper.PerformAfterSeconds(0.5f, () =>
         {
             _ginjaShop.OpenShop(chosenTex);
-            _controller.Team.AddRandomFollower();
             _controller.Suppress();
         });
         CoroutineHelper.PerformAfterSeconds(3f, () =>
         {
             _ginjaShop.CloseShop();
+            _controller.Team.AddRandomFollower();
             _controller.Unsupress();
         });
 

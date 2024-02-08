@@ -39,11 +39,11 @@ public class Follower : MonoBehaviour
 
         transform.rotation = _target.transform.rotation;
 
-        _idleCountdown -= Time.deltaTime;
+        _idleCountdown -= Time.fixedDeltaTime;
 
         if (_idleWalk)
         {
-            _rb.AddForce(randomDir * 20);
+            _rb.AddForce(randomDir * 2000 * Time.fixedDeltaTime);
         }
         if (dst < 2)
         {
@@ -51,6 +51,6 @@ public class Follower : MonoBehaviour
         }
 
 
-        _rb.AddForce((_target.transform.position - transform.position).normalized * 10);
+        _rb.AddForce((_target.transform.position - transform.position).normalized * 1000 * Time.fixedDeltaTime);
     }
 }
