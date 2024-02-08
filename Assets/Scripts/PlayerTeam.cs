@@ -32,7 +32,7 @@ public class PlayerTeam : MonoBehaviour
         for (int i = 0; i < _startingTeam.Length; i++)
         {
             Person p = _startingTeam[i];
-            AddNewFollower(p);
+            AddNewFollower(p, true);
             if (_allPersons.Contains(p))
             {
                 _allPersons.Remove(p);
@@ -54,11 +54,16 @@ public class PlayerTeam : MonoBehaviour
         return p;
     }
 
-    private void AddNewFollower(Person p)
+    private void AddNewFollower(Person p, bool supressAnim = false)
     {
         GameObject newGo = Instantiate(_followerPrefab);
         newGo.transform.position = _followerSpawnParent.GetChild(Random.Range(0, _followerSpawnParent.childCount)).transform.position;
         newGo.GetComponent<CharacterPlanes>().Setup(p);
         _followers.Add(p);
+
+        if (!supressAnim)
+        {
+            NewPokemonBehav.AnnounceNewPokemon(p);
+        }
     }
 }
