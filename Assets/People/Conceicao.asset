@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Conceicao
   m_EditorClassIdentifier: 
   _person: 7
-  _faceTexture: {fileID: 2800000, guid: 298617161e706324cbd8c3ad5f7efb29, type: 3}
+  _faceTexture: {fileID: 2800000, guid: d23cc37ede39dbe4d8e93a202cdb67e4, type: 3}

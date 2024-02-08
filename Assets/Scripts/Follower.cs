@@ -23,7 +23,7 @@ public class Follower : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float dst = Vector3.Distance(_target.transform.position, transform.position);
         Vector3 randomDir = new Vector3(

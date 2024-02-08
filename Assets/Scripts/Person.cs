@@ -30,4 +30,5 @@ public enum IRLPeople
     Bruno,
     Conceicao,
     Phil,
+    Suzane,
 }

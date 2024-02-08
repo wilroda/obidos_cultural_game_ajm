@@ -6,6 +6,8 @@ public class GinjaShopEnvironment : MonoBehaviour
 {
     [SerializeField] private Animator[] _allAnims;
 
+    [SerializeField] private CharacterPlanes _ginjaPlane;
+
     private PlayerTeam _pTeam;
     private void Start()
     {
@@ -13,13 +15,20 @@ public class GinjaShopEnvironment : MonoBehaviour
         _allAnims[Random.Range(0, _allAnims.Length)].SetBool("talking", true);
     }
 
-    public void OpenShop()
+    public void OpenShop(Texture2D ginjatex = default)
     {
+        _ginjaPlane.gameObject.SetActive(false);
+        if (ginjatex != null)
+        {
+            _ginjaPlane.ApplyTextureToMeshes(ginjatex);
+            _ginjaPlane.gameObject.SetActive(true);
+        }
+
         gameObject.SetActive(true);
     }
     public void CloseShop()
     {
-        gameObject.SetActive(true);
+        gameObject.SetActive(false);
     }
 
     private void OnEnable()

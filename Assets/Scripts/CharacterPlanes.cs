@@ -10,4 +10,13 @@ public class CharacterPlanes : MonoBehaviour
     {
         p.ApplyTextureToMeshes(_rends);
     }
+
+    public void ApplyTextureToMeshes(Texture2D texture)
+    {
+        foreach (Renderer mr in _rends)
+        {
+            mr.material.SetTexture("_MainTex", texture);
+            mr.material.mainTexture = texture;
+        }
+    }
 }

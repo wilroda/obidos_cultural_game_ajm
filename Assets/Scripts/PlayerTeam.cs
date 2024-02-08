@@ -19,6 +19,7 @@ public class PlayerTeam : MonoBehaviour
 
     public Person Lead => _lead;
 
+
     private void Awake()
     {
         _followers = new List<Person>();
@@ -27,7 +28,7 @@ public class PlayerTeam : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        _allPersons.Remove(_lead);
         for (int i = 0; i < _startingTeam.Length; i++)
         {
             Person p = _startingTeam[i];

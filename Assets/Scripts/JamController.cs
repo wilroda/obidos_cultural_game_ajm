@@ -16,10 +16,12 @@ public class JamController : MonoBehaviour
     public Vector2 MovementAxis { get; private set; }
     public float RunFactor { get; private set; }
     public bool IsMoving => _rb.velocity.magnitude + Movement.magnitude > 0.01f;
+    public PlayerTeam Team { get; private set; }
 
     private void Start()
     {
         _rb = GetComponent<Rigidbody>();
+        Team = GetComponent<PlayerTeam>();
         _playerTransform = transform;
         _playerCamera = Camera.main;
         RunFactor = 1;
@@ -77,5 +79,14 @@ public class JamController : MonoBehaviour
     private void Jump()
     {
         _rb.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
+    }
+
+    public void Suppress()
+    {
+        enabled = false;
+    }
+    public void Unsupress()
+    {
+        enabled = true;
     }
 }

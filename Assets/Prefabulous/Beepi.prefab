@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5282039656674542014}
@@ -601,7 +601,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000058114523}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: -1.3, y: 1.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5282039656674542014}
@@ -754,6 +754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f8aeb3332232bc4e8581060ae0fb5e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _lead: {fileID: 11400000, guid: 64b4c4f95533aa24fa7c26c34d5592a9, type: 2}
   _followerPrefab: {fileID: 4801209099969691766, guid: 53c409a8c8db0c7468542855589138ba,
     type: 3}
   _startingTeam:
@@ -761,7 +762,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dc97463b34d67874398f6fea01dee8df, type: 2}
   - {fileID: 11400000, guid: 47c6243469d079f448c2ffd9883753dc, type: 2}
   _followerSpawnParent: {fileID: 3079069692031522927}
-  _lead: {fileID: 11400000, guid: 64b4c4f95533aa24fa7c26c34d5592a9, type: 2}
   _allPersons:
   - {fileID: 11400000, guid: 95bdbf7eccc31974c96926eb113e0d33, type: 2}
   - {fileID: 11400000, guid: c756ff4f1a2b3514eab7b18c03a2dbc9, type: 2}
@@ -772,6 +772,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5acdbad4c4659444f81c3c7284368023, type: 2}
   - {fileID: 11400000, guid: dc97463b34d67874398f6fea01dee8df, type: 2}
   - {fileID: 11400000, guid: 64b4c4f95533aa24fa7c26c34d5592a9, type: 2}
+  - {fileID: 11400000, guid: d7da2f9c241a9b24da0361c138d9c075, type: 2}
 --- !u!114 &3411535898610940537
 MonoBehaviour:
   m_ObjectHideFlags: 0
