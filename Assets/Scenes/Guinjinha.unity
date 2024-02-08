@@ -629,7 +629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 787885395}
   _distance: 5
-  _rotationSpeed: 2
+  _rotationSpeed: 80
   _yOffset: 0
   _minVerticalAngle: -89
   _maxVerticalAngle: -45

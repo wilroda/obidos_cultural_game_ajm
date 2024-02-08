@@ -41,8 +41,8 @@ public class Jam3DPlatformerCamera : MonoBehaviour
     private void HandleInput()
     {
         // Mouse input
-        _mouseX += Input.GetAxis("Mouse X") * _rotationSpeed;
-        _mouseY += Input.GetAxis("Mouse Y") * _rotationSpeed;
+        _mouseX += Input.GetAxis("Mouse X") * _rotationSpeed * Time.deltaTime;
+        _mouseY += Input.GetAxis("Mouse Y") * _rotationSpeed * Time.deltaTime;
 
         // Joystick input (Right Stick)
         //mouseX += Input.GetAxis("RightStickX") * rotationSpeed;
@@ -55,7 +55,7 @@ public class Jam3DPlatformerCamera : MonoBehaviour
 
         if (horizontalInput != 0)
         {
-            float desiredAngle = _target.eulerAngles.y + horizontalInput * _rotationSpeed;
+            float desiredAngle = _target.eulerAngles.y + horizontalInput * _rotationSpeed * Time.deltaTime;
             Quaternion rotation = Quaternion.Euler(0f, desiredAngle, 0f);
             transform.position = _target.position - rotation * Vector3.forward * _rotationSpeed + (_yOffset * _target.up);
             transform.LookAt(_target.position);
