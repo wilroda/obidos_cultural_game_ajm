@@ -264,6 +264,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Castle_IHope (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7971913080048549282, guid: 4927b90e29ec97247b8a37530f6a8e1c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -445,6 +450,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -683,6 +693,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheWall (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -744,6 +759,134 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 187254844}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &192999300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 192999301}
+  - component: {fileID: 192999302}
+  m_Layer: 0
+  m_Name: Phrases Sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &192999301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192999300}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 400211128}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &192999302
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192999300}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &205415685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -806,6 +949,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Castle_IHope (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971913080048549282, guid: 4927b90e29ec97247b8a37530f6a8e1c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1081,6 +1229,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheWall (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1250,6 +1403,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheWall (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1323,6 +1481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -1795,6 +1958,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Castle_IHope (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7971913080048549282, guid: 4927b90e29ec97247b8a37530f6a8e1c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1886,6 +2054,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -1995,6 +2168,8 @@ Transform:
   - {fileID: 1379485213}
   - {fileID: 1286590284}
   - {fileID: 1471336151}
+  - {fileID: 937251346}
+  - {fileID: 192999301}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &400211129
@@ -2024,6 +2199,13 @@ MonoBehaviour:
   - {fileID: 1286590286}
   - {fileID: 1471336153}
   _ginjaPlane: {fileID: 285259707}
+  _ambx: {fileID: 937251347}
+  _phrasesSource: {fileID: 192999302}
+  _phrases:
+  - {fileID: 8300000, guid: d0f039d95a3211b4bb7ac6cd6e8dd10d, type: 3}
+  - {fileID: 8300000, guid: 8c3481a2f73c4b44eb9f24cc4f127c64, type: 3}
+  - {fileID: 8300000, guid: 01f05f3d7ba5d2f47a48b114ef1ff246, type: 3}
+  - {fileID: 8300000, guid: b70a097f25303bc4d8c9f0fea0be8382, type: 3}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2155,6 +2337,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheWall (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2250,6 +2437,7 @@ Transform:
   - {fileID: 825528149}
   - {fileID: 1326022191}
   - {fileID: 1793361608}
+  - {fileID: 1518054742}
   m_Father: {fileID: 330585546}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &469407974
@@ -2287,6 +2475,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _facePlaces: {fileID: 825528150}
   _anim: {fileID: 469407974}
+  _source: {fileID: 1518054743}
+  _newPokemonSound: {fileID: 8300000, guid: fde06f7db8572294ba498b9c18137aa9, type: 3}
 --- !u!1001 &527838483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2349,6 +2539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Castle_IHope (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971913080048549282, guid: 4927b90e29ec97247b8a37530f6a8e1c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2538,6 +2733,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheWall (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2661,6 +2861,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Castle_IHope (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971913080048549282, guid: 4927b90e29ec97247b8a37530f6a8e1c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3220,6 +3425,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Castle_IHope (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7971913080048549282, guid: 4927b90e29ec97247b8a37530f6a8e1c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3362,6 +3572,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheWall (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3435,6 +3650,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -3646,6 +3866,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheWall (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3713,7 +3938,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1844364840}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &912476763
+--- !u!64 &912476767
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3747,6 +3972,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -3815,6 +4045,134 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 630840469}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &937251345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 937251346}
+  - component: {fileID: 937251347}
+  m_Layer: 0
+  m_Name: AMBX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &937251346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937251345}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 400211128}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &937251347
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937251345}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: fb3e74585296d6d4ea94088f5f6353e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &949492216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3878,6 +4236,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Castle_IHope (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7971913080048549282, guid: 4927b90e29ec97247b8a37530f6a8e1c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3934,6 +4297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -4145,6 +4513,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -4486,6 +4859,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -4861,6 +5239,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheWall (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4934,6 +5317,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -5154,6 +5542,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Castle_IHope (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7971913080048549282, guid: 4927b90e29ec97247b8a37530f6a8e1c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5260,6 +5653,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -5952,6 +6350,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheWall (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6143,6 +6546,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -6369,6 +6777,134 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0.045057535, z: 0}
     m_Extent: {x: 0.49999997, y: 0.59121406, z: 0}
   m_DirtyAABB: 0
+--- !u!1 &1518054741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1518054742}
+  - component: {fileID: 1518054743}
+  m_Layer: 0
+  m_Name: Sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1518054742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518054741}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 469407973}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1518054743
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518054741}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.9
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1519768718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6381,6 +6917,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -6455,6 +6996,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -6580,6 +7126,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Castle_IHope (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7971913080048549282, guid: 4927b90e29ec97247b8a37530f6a8e1c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6603,6 +7154,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -6986,6 +7542,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Castle_IHope (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7971913080048549282, guid: 4927b90e29ec97247b8a37530f6a8e1c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7059,6 +7620,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Castle_IHope (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971913080048549282, guid: 4927b90e29ec97247b8a37530f6a8e1c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7310,6 +7876,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheWall (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7439,6 +8010,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Castle_IHope (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971913080048549282, guid: 4927b90e29ec97247b8a37530f6a8e1c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7704,6 +8280,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheWall (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7855,7 +8436,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 01af7a51293a42e45a3c86181450e8c0,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 912476763}
+      addedObject: {fileID: 912476767}
   m_SourcePrefab: {fileID: 100100000, guid: 01af7a51293a42e45a3c86181450e8c0, type: 3}
 --- !u!1 &1877258487
 GameObject:
@@ -8070,6 +8651,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -8289,12 +8875,12 @@ PrefabInstance:
     - target: {fileID: 3908854703749362476, guid: e85c56d728d749e42ab84fdafeee907c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.47
+      value: 18.25
       objectReference: {fileID: 0}
     - target: {fileID: 3908854703749362476, guid: e85c56d728d749e42ab84fdafeee907c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70710784
+      value: 0.6430814
       objectReference: {fileID: 0}
     - target: {fileID: 3908854703749362476, guid: e85c56d728d749e42ab84fdafeee907c,
         type: 3}
@@ -8304,7 +8890,7 @@ PrefabInstance:
     - target: {fileID: 3908854703749362476, guid: e85c56d728d749e42ab84fdafeee907c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.70710576
+      value: -0.7657978
       objectReference: {fileID: 0}
     - target: {fileID: 3908854703749362476, guid: e85c56d728d749e42ab84fdafeee907c,
         type: 3}
@@ -8319,7 +8905,7 @@ PrefabInstance:
     - target: {fileID: 3908854703749362476, guid: e85c56d728d749e42ab84fdafeee907c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: -99.956
       objectReference: {fileID: 0}
     - target: {fileID: 3908854703749362476, guid: e85c56d728d749e42ab84fdafeee907c,
         type: 3}
@@ -8512,6 +9098,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheWall (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8585,6 +9176,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheWall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
@@ -8709,6 +9305,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Castle_IHope (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971913080048549282, guid: 4927b90e29ec97247b8a37530f6a8e1c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8924,6 +9525,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheWall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7239970798040248203, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8012567534686680369, guid: 9ebd207ab007e8c4dac9a62fd80c3493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9109,6 +9715,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Castle_IHope (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971913080048549282, guid: 4927b90e29ec97247b8a37530f6a8e1c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -7,12 +7,14 @@ public class GinjaShopEnvironment : MonoBehaviour
     [SerializeField] private Animator[] _allAnims;
 
     [SerializeField] private CharacterPlanes _ginjaPlane;
+    [SerializeField] private AudioSource _ambx;
+    [SerializeField] private AudioSource _phrasesSource;
+    [SerializeField] private AudioClip[] _phrases;
 
     private PlayerTeam _pTeam;
     private void Start()
     {
         gameObject.SetActive(false);
-        _allAnims[Random.Range(0, _allAnims.Length)].SetBool("talking", true);
     }
 
     public void OpenShop(Texture2D ginjatex = default)
@@ -25,10 +27,38 @@ public class GinjaShopEnvironment : MonoBehaviour
         }
 
         gameObject.SetActive(true);
+        _ambx.Play();
+
+        AudioClip selectedPhrase = _phrases[Random.Range(0, _phrases.Length)];
+        Animator selectedAnimator;
+
+        do
+        {
+            selectedAnimator = _allAnims[Random.Range(0, _allAnims.Length)];
+        } while (!selectedAnimator.gameObject.activeSelf);
+
+        CoroutineHelper.PerformAfterSeconds(1f, () =>
+        {
+            selectedAnimator.SetBool("talking", true);
+            _phrasesSource.PlayOneShot(selectedPhrase);
+
+            CoroutineHelper.PerformAfterSeconds(selectedPhrase.length, () =>
+            {
+                selectedAnimator.SetBool("talking", false);
+            });
+            CoroutineHelper.PerformAfterSeconds(selectedPhrase.length + 1f, () =>
+            {
+                CloseShop();
+
+                JamController.Instance.Team.AddRandomFollower();
+                JamController.Instance.Unsupress();
+            });
+        });
     }
     public void CloseShop()
     {
         gameObject.SetActive(false);
+        _ambx.Pause();
     }
 
     private void OnEnable()

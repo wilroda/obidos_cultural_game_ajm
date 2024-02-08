@@ -8,6 +8,10 @@ public class NewPokemonBehav : MonoBehaviour
 
     [SerializeField] private CharacterPlanes _facePlaces;
     [SerializeField] private Animator _anim;
+
+    [Space]
+    [SerializeField] private AudioSource _source;
+    [SerializeField] private AudioClip _newPokemonSound;
     private void Awake()
     {
         _instance = this;
@@ -27,5 +31,6 @@ public class NewPokemonBehav : MonoBehaviour
         {
             _instance.gameObject.SetActive(false);
         });
+        _instance._source.PlayOneShot(_instance._newPokemonSound);
     }
 }

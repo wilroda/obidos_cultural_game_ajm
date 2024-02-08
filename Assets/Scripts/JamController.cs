@@ -18,6 +18,11 @@ public class JamController : MonoBehaviour
     public bool IsMoving => _rb.velocity.magnitude + Movement.magnitude > 0.01f;
     public PlayerTeam Team { get; private set; }
 
+    public static JamController Instance;
+    private void Awake()
+    {
+        Instance = this;
+    }
     private void Start()
     {
         _rb = GetComponent<Rigidbody>();

@@ -6,9 +6,14 @@ public class GinjaTrap : MonoBehaviour
 {
     [SerializeField] private Animator _anim;
     [SerializeField] private Transform _ginjaSurprise;
-    [SerializeField] private Texture2D[] _possibleGinjasTex;
+    [SerializeField] private GinjaProfile[] _possibleGinjas;
+
 
     [SerializeField] private CharacterPlanes _planes;
+
+    [Space]
+    [SerializeField] private AudioSource _doorSource;
+    [SerializeField] private AudioClip _doorOpenSound;
 
     private GinjaShopEnvironment _ginjaShop;
 
@@ -27,7 +32,8 @@ public class GinjaTrap : MonoBehaviour
         {
             return;
         }
-        Texture2D chosenTex = _possibleGinjasTex[Random.Range(0, _possibleGinjasTex.Length)];
+        GinjaProfile chosenP = _possibleGinjas[Random.Range(0, _possibleGinjas.Length)];
+        Texture2D chosenTex = chosenP.Texture;
         _planes.ApplyTextureToMeshes(chosenTex);
 
         _anim.SetBool("opened", true);
@@ -35,19 +41,27 @@ public class GinjaTrap : MonoBehaviour
         _controller = FindObjectOfType<JamController>();
         _lookAtTarget = _controller.transform;
 
-        CoroutineHelper.PerformAfterSeconds(0.5f, () =>
+        CoroutineHelper.PerformAfterSeconds(0.2f, () =>
         {
-            _ginjaShop.OpenShop(chosenTex);
             _controller.Suppress();
         });
-        CoroutineHelper.PerformAfterSeconds(3f, () =>
+        CoroutineHelper.PerformAfterSeconds(1.5f, () =>
         {
-            _ginjaShop.CloseShop();
-            _controller.Team.AddRandomFollower();
-            _controller.Unsupress();
+            _ginjaShop.OpenShop(chosenTex);
         });
+        
+        // CoroutineHelper.PerformAfterSeconds(3.5f, () =>
+        // {
+        //     _ginjaShop.CloseShop();
+        //     _controller.Team.AddRandomFollower();
+        //     _controller.Unsupress();
+        // });
 
         _visited = true;
+
+        _doorSource.PlayOneShot(_doorOpenSound);
+
+        CoroutineHelper.PerformAfterSeconds(0.35f, () => _doorSource.PlayOneShot(chosenP.Sound));
     }
     public void PlayerExitedCollider()
     {
