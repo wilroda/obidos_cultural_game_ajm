@@ -32,4 +32,5 @@ public enum IRLPeople
     Phil,
     Suzane,
     Carlos,
+    Henrique,
 }

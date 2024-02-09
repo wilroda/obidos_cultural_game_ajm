@@ -15,7 +15,7 @@ public class PlayerTeam : MonoBehaviour
 
     private List<Person> _followers;
 
-    public List<Person> Followers => _followers;
+    public List<Person> Followers { get => _followers; set => _followers = value; }
 
     public Person Lead => _lead;
 
@@ -37,6 +37,15 @@ public class PlayerTeam : MonoBehaviour
             {
                 _allPersons.Remove(p);
             }
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            string currentSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneName);
         }
     }
 
