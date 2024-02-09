@@ -23,6 +23,8 @@ public class PlayerTeam : MonoBehaviour
     private void Awake()
     {
         _followers = new List<Person>();
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Start is called before the first frame update
