@@ -49,6 +49,14 @@ public class PlayerTeam : MonoBehaviour
             string currentSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
             UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneName);
         }
+        if (Input.GetKeyDown(KeyCode.F12))
+        {
+            AddRandomFollower();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     [Button]
